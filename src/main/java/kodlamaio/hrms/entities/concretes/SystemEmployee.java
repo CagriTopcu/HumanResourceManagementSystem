@@ -1,6 +1,8 @@
 package kodlamaio.hrms.entities.concretes;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,6 +13,8 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "system_employees")
+@AllArgsConstructor
+@NoArgsConstructor
 public class SystemEmployee {
     @Id
     @Column(name = "user_id")
