@@ -163,6 +163,56 @@
     </tbody>
 </table>
 
+##  :pushpin: Cities
+
+<table>
+    <thead>
+        <tr>
+            <th>city_id</th>
+            <th>city_name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>34</td>
+            <td>İstanbul</td>
+        </tr>
+    </tbody>
+</table>
+
+## :pushpin: Job Advertisements
+
+<table>
+    <thead>
+        <tr>
+            <th>job_advertisement_id</th>
+            <th>employer_id</th>
+            <th>job_position_id</th>
+            <th>city_id</th>
+            <th>description</th>
+            <th>salary_min</th>
+            <th>salary_max</th>
+            <th>number_of_open_job_position</th>
+            <th>create_date</th>
+            <th>active</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>Example description</td>
+            <td>2500</td>
+            <td>3500</td>
+            <td>5</td>
+            <td>28/05/2021</td>
+            <td>true</td>
+        </tr>
+    </tbody>
+</table>
+
 ## :pushpin: Verifications
 
 <table>

@@ -6,30 +6,23 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
 import java.util.List;
 
 @Data
 @Entity
-@Table(name = "job_positions")
+@Table(name = "cities")
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "jobAdvertisements"})
-public class JobPosition {
+public class City {
     @Id
-    @GeneratedValue
-    @Column(name = "job_position_id")
-    private int job_position_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "city_id")
+    public int cityId;
 
-    @Column(name= "name")
-    private String name;
+    @Column(name = "city_name")
+    public String cityName;
 
-    @Column(name = "create_date")
-    private Date create_date;
-
-    @Column(name = "active")
-    private boolean active;
-
-    @OneToMany(mappedBy = "jobPosition")
+    @OneToMany(mappedBy = "city")
     private List<JobAdvertisement> jobAdvertisements;
 }
