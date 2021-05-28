@@ -203,7 +203,7 @@
             <td>1</td>
             <td>1</td>
             <td>1</td>
-            <td>Description 1</td>
+            <td>Example description</td>
             <td>2500</td>
             <td>3500</td>
             <td>5</td>
